@@ -142,5 +142,54 @@ console.log(addSquare(2, 3));
 
 console.log('-------------------------------------Array-------------------------------------');
 
-let colors = ['blue', 'red', 'green'];
+let colors = ['blue', 'red', 'green']; //um array simples mostrando uma lista de cores
+console.log(colors[1]); //mostrando no console o item 1 do array, que é o 'red', pois se começa com 0
 console.log(colors);
+
+let idades = [10, 20, 30, 15, 12, 14]; //array com numbers
+console.log(idades);
+
+let listaCoisas = ['arroz', 30, true]; //array com varios tipos de dados
+console.log(listaCoisas);
+
+let listaGrande = ['feijão', listaCoisas]; //to colocando um array dentro de outro array
+console.log(listaGrande);
+
+let listaCoisas2 = ['carne', [20, 30, 50, 'óleo'], true]; //ABRINDO um array dentro de outro array
+console.log(listaCoisas2);
+console.log(listaCoisas2[1]); //esta exibindo no console o array que eu criei dentro desse outro array
+console.log(listaCoisas2[1][3]); // to exibindo o item 3 "óleo" do array dentro do array
+let itemOleo = listaCoisas2[1][3]; //armazenando numa variavel, pois assim pode reaproveitar
+console.log(itemOleo);
+
+console.log('-------------------------------------OPERAÇÕES BÁSICAS DE ARRAY-------------------------------------');
+
+let ingredientesBolo = ['agua', 'farinha', 'ovo', 'corante', 'cola', 'sal'];
+
+ingredientesBolo.push('cebola'); //esta funcao adiciona um item ao final do array
+ingredientesBolo.unshift('alho'); //esta funcao adiciona um item no começo da array
+ingredientesBolo.shift(); //esta funcao remove o primeiro item de um array (removeu alho)
+ingredientesBolo.pop(); //esta funcao remove o ultimo item de um array (removeu cebola)
+
+console.log(`total de ingredientes: ${ingredientesBolo.length}`); //o .length me mostra o numero total de itens nessa string
+console.log(ingredientesBolo);
+
+console.log('-------------------------------------EXERCICIO ARRAY-------------------------------------');
+
+//1. No array abaixo, qual o numero que pega a Ferrari?
+let carros = [`BMW`, `Ferrari`, `Mercedes`];
+let numFerrari = 1;
+console.log(`1. ${carros[1]}`);
+
+//2. Troque a Ferrari por Audi
+carros[1] = 'Audi';
+console.log(`2. Lista com Audi:`);
+console.log(carros);
+
+//3. Adiciona o Volvo na lista
+carros.push(`Volvo`);
+console.log(`3. Lista com Volvo:`);
+console.log(carros);
+
+//4.Exiba quantos itens tem no array
+console.log(`4. Itens no array: ${carros.length}`);
