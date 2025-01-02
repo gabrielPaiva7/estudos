@@ -141,3 +141,6 @@ function addSquare(n1, n2) {
 console.log(addSquare(2, 3));
 
 console.log('-------------------------------------Array-------------------------------------');
+
+let colors = ['blue', 'red', 'green'];
+console.log(colors);
