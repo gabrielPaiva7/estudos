@@ -102,7 +102,75 @@ let cores = ['azul', 'preto', 'vermelho', 'verde'];
 cores.push('rosa');
 
 for (let count in cores) {
-  console.log(cores[count]);
+  //o console.log dentro do loop
+  console.log(cores[count]); //crio a variavel count e uso o "in" no array, depois mostro na tela
 }
 
 console.log('--------------------------------------LOOP EM ARRAY DO JEITO CERTO2------------------------------------');
+for (let cor of cores) {
+  console.log(cor); //crio a variavel cor e uso o "of" no array, e pra exibir é assim
+}
+
+console.log('--------------------------------------LOOP EM ARRAY DO JEITO CERTO3------------------------------------');
+
+let cores2 = [
+  { cor: 'azul', qt: 5 },
+  { cor: 'verde', qt: 4 },
+  { cor: 'vermelho', qt: 7 },
+];
+for (let cor2 of cores2) {
+  console.log(cor2.cor.toUpperCase()); //usando o for of para acessar objetos de um array
+  console.log(cor2.qt);
+}
+console.log('--------------------------------------------------------------------------');
+
+for (let cor3 in cores2) {
+  console.log(cores2[cor3].cor.toUpperCase()); //usando o for in para acessar os objetos de uma string
+}
+// O In seria o índice (posição) de cada cor sendo: 0, 1, 2...
+// percebe q quando você for no console, vai lhe mostrar a cor e o indice(posição) daquela cor. Então, em caso de vc estiver
+// trabalhando com um Array muito grande e queira fazer a manipulação de posições, acredito que o mais adequado seria o IN
+//--------------------------------------------------------------------------------------------------------------------------------------
+// o OF é usado quando queira somente os valores dos arrays/objetos. (sem índice)
+
+console.log('------------------------------------LOOP WHILE---------------------------------------------------------');
+
+let numero = 0;
+
+while (numero < 10) {
+  console.log(`O numero da vez é ${numero}`);
+  numero++;
+}
+//while precisa de criar a variavel antes de usar, e usar o "numero++" dentro do codigo
+
+console.log('------------------------EXERCICIO LOOP-----------------------------');
+
+//faça um loop que mostre todas as frutas
+let fruits = ['Maça', 'Uva', 'Banana'];
+
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+console.log('-------------------------------------');
+for (let fruit2 in fruits) {
+  console.log(fruits[fruit2]);
+}
+
+console.log('---------------------------------------------------------------------');
+
+//conte de 1 até 10 através de um while
+let count2 = 1;
+
+while (count2 <= 10) {
+  console.log(count2);
+  count2++;
+}
+
+console.log('----------------------------ORDENAÇÃO DE ARRAY-----------------------------------------');
+
+let fruits3 = ['Maçã', 'Uva', 'Laranja', 'Banana'];
+fruits3.sort(); //o sort ordenou a lista em ordem alfábetica, meu item 0 agora é banana
+fruits3.reverse(); //o reverse inverte o array, combinando com o sort, vai inverter a ordem alfabetica
+console.log(fruits3);
+
+console.log('--------------------------------------------------');

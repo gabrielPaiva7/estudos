@@ -170,9 +170,9 @@ ingredientesBolo.push('cebola'); //esta funcao adiciona um item ao final do arra
 ingredientesBolo.unshift('alho'); //esta funcao adiciona um item no começo da array
 ingredientesBolo.shift(); //esta funcao remove o primeiro item de um array (removeu alho)
 ingredientesBolo.pop(); //esta funcao remove o ultimo item de um array (removeu cebola)
-
 console.log(`total de ingredientes: ${ingredientesBolo.length}`); //o .length me mostra o numero total de itens nessa string
 console.log(ingredientesBolo);
+console.log(ingredientesBolo.join(', ')); //esse .join eu transformo o array em string, separando os itens pelo o eu colocar, isso nao altera o array, apenas gera uma string baseado no array
 
 console.log('-------------------------------------EXERCICIO ARRAY-------------------------------------');
 
